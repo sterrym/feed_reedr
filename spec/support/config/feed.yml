@@ -1,0 +1,17 @@
+server_type: ftp
+server: ftp.example.com
+username: secret_user
+password: Secret123
+csv_basenames:
+  - foo
+  - bar
+file_pattern: "<%= basename %><%= date.strftime('%Y%m%d') %>.<%= suffix %>"
+foo_columns:
+  "First Name": first_name
+  "Lastname": last_name
+  "Phone": phone
+  "Email": email
+  "Web Page Address": website
+  "Office ID": office_id
+  "Designation": designation
+  "Modification Date": modification_date
